@@ -1,0 +1,11 @@
+extends layout.pug
+block content
+  h1= message
+  p how much? #{howMuch}!
+  p Here is some text rendered from pug
+          table(border=1)
+            tr
+              th Temperature units
+                  each units in table
+                    tr
+                      td= units
